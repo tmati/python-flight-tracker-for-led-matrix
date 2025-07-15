@@ -201,3 +201,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Unnecessary to push content to this.
+data/flightcache.txt
