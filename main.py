@@ -25,7 +25,7 @@ if flightInfo:
     print(f"Airline: {flightInfo.get('airlineName', 'Unknown airline')}")
     print(f"Airline origin country: {flightInfo.get('airlineOrigin', 'Unknown airline origin')}")
     print(f"Airline origin ISO code: {flightInfo.get('airlineCountryIso', 'Unknown airline country ISO')}")
-
+    print(f"Aircraft category: {flightInfo.get('aircraftCategory', 'Unknown aircraft category')}")
     print(f"Departure: {flightInfo.get('departure', 'Unknown departure IATA')}")
     print(f"Departure ICAO: {flightInfo.get('departureIcao', 'Unknown departure ICAO')}")
     print(f"Departure municipality: {flightInfo.get('departureMunicipality', 'Unknown departure municipality')}")

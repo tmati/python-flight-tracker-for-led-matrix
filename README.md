@@ -12,18 +12,18 @@ The long term goal is to install the script to a Raspberry PI ZERO, and configur
 - [x] Use callsign queried from OpenSky to call ADSBDB API for further flight information
 - [x] Write found information of latest flight into text file for caching
 - [x] Read information from cache if no update for flight information is available
-- [x] draft code for displaying data on LED matrix using [rpi-rgb-led-matrix](https://github.com/hzeller/rpi-rgb-led-matrix) (Needs Linux host and LED matrix in GPIO to work)
+- [x] draft code for displaying data on LED matrix using [rpi-rgb-led-matrix](https://github.com/hzeller/rpi-rgb-led-matrix) (Needs Raspberry Pi host and LED matrix in GPIO to work)
 - [x] Error handling and secure defaults for flights where ADSBDB doesn't return anything
 - [x] Special callsigns list to get information for e.g. HEMS services that usually do not serve it, even if their callsign is found.
+- [x] Mapper for aircraft type information
+- [x] Use preset location information to show information of closest flight based on specified coordinates and coordinates of flight. Manage user coordinates as secrets.
 
 
 # TODO
 
-- [ ] Mapper for aircraft type information
 - [ ] Bounding box coordinate information as function parameters to OpenSky URL
-- [ ] Use preset location information to show information of closest flight based on specified coordinates and coordinates of flight. Manage user coordinates as secrets
-- [ ] Filter by arrivals or departures based on vertical rate. Could work near airfields
+- [ ] Show latest airport arrival info via OpenSky and airport ICAO. Manage ICAO as secret.
 - [ ] Logging? e.g. track daily request amount to keep track of rate limits
-- [ ] Set up scheduled scanning (probably cron task on linux)
+- [ ] Set up scheduled scanning (probably cron task on RPi)
 - [ ] Set up credentials and OAuth2.0 for OpenSky API to increase rate limits if necessary. Handle credentials as secrets
 - [ ] Design custom layout for flight data on LED matrix
